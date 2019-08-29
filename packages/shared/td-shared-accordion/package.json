@@ -3,10 +3,6 @@
   "version": "0.0.3",
   "description": "Accordion",
   "author": "dborodin",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/DimonVelikij/lerna/tree/master/packages/shared/accordion"
-  },
   "peerDependencies": {
     "@angular/common": "^8.2.3",
     "@angular/core": "^8.2.3"
