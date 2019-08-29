@@ -1,0 +1,14 @@
+{
+  "name": "@tr/shared-alert",
+  "version": "0.0.1",
+  "description": "Alert",
+  "author": "dborodin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DimonVelikij/lerna/tree/master/packages/shared/alert"
+  },
+  "peerDependencies": {
+    "@angular/common": "^8.2.3",
+    "@angular/core": "^8.2.3"
+  }
+}

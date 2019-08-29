@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+
+  verdaccio:
+    image: verdaccio/verdaccio
+    ports:
+      - '4873:4873'
+
+  lerna:
+    build: .
+    links:
+      - verdaccio
+    volumes:
+      - ./:/var/www/lerna
+    working_dir: /var/www/lerna
