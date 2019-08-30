@@ -29,8 +29,8 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "@tr/shared-accordion": "^0.0.5",
-    "@tr/shared-alert": "^0.0.5"
+    "@tr/shared-accordion": "^0.0.6",
+    "@tr/shared-alert": "^0.0.6"
   },
   "deprecated": false,
   "description": "Shared",
@@ -40,5 +40,5 @@
     "@angular/common": "^8.2.3",
     "@angular/core": "^8.2.3"
   },
-  "version": "0.0.7"
+  "version": "0.0.8"
 }
