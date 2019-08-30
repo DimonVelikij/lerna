@@ -1,4 +1,3 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AccordionDesktopComponent } from './accordion.desktop.component';
@@ -7,9 +6,7 @@ import { AccordionDesktopComponent } from './accordion.desktop.component';
     declarations: [
         AccordionDesktopComponent
     ],
-    imports: [
-        BrowserModule
-    ],
+    imports: [],
     providers: [],
     exports: [
         AccordionDesktopComponent

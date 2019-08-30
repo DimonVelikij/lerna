@@ -1,4 +1,3 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AccordionMobileModule } from "./accordion/accordion.mobile.module";
@@ -10,7 +9,6 @@ import { AlertMobileComponent } from "./alert/alert.mobile.component";
 @NgModule({
     declarations: [],
     imports: [
-        BrowserModule,
         AccordionMobileModule,
         AlertMobileModule
     ],

@@ -1,4 +1,3 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AlertMobileComponent } from './alert.mobile.component';
@@ -7,9 +6,7 @@ import { AlertMobileComponent } from './alert.mobile.component';
     declarations: [
         AlertMobileComponent
     ],
-    imports: [
-        BrowserModule
-    ],
+    imports: [],
     providers: [],
     exports: [
         AlertMobileComponent

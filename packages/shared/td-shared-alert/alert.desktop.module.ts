@@ -1,4 +1,3 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AlertDesktopComponent } from './alert.desktop.component';
@@ -7,9 +6,7 @@ import { AlertDesktopComponent } from './alert.desktop.component';
     declarations: [
         AlertDesktopComponent
     ],
-    imports: [
-        BrowserModule
-    ],
+    imports: [],
     providers: [],
     exports: [
         AlertDesktopComponent
