@@ -1,27 +1,55 @@
-# TdProject
+# Lerna
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.1.
+Позволяет выносить компоненты приложения в отдельные npm пакеты
 
-## Development server
+## Установка
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+`npm install -g lerna`
 
-## Code scaffolding
+## Установка Angular cli
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`npm install -g @angular/cli`
 
-## Build
+# Создание или использование проекта на angular
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+`ng new my-project` - создание нового проекта на angular
 
-## Running unit tests
+`git clone <url> .` - клонирование существующего проекта
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Инициализация lerna в проекта
 
-## Running end-to-end tests
+`npx lerna init --independent` - ключ independent означает, что у каждого пакета версия будет меняться независимо от других пакетов, если не указать этот ключ, то при изменении одного пакета версия изменится у всех остальных пакетов. После выполнения данной команды должен обновиться package.json проекта. В секции "devDependencies" добавится зависимость, также появится файл `lerna.json` и каталог `packages`. Файл `lerna.json` содржит настройка сервиса lerna, подробнее здесь https://github.com/lerna/lerna. Каталог `packages` будет содержать компоненты, которые нужно вынести в отдельные npm репозитории. Далее нужно настроить файл `lerna.json` под свои нужды.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+# Работа с приватным npm репозиторием
 
-## Further help
+`npm set registry http://<host>:<port>/` - указываем npm, что будет использоваться репозиторий `http://<host>:<port>/`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+`npm adduser --registry http://<host>:<port>/` - добавление пользователя в npm репозиторий, после ввода данной команды потребуется ввести логин, пароль и email пользователя
+
+`npm login` - авторизовываемся в npm репозитории, потребуется ввести логин, пароль и email из предыдущего шага.
+
+## Создание компонента
+
+В каталоге `projects` добавляем каталог для нового компонента, н-р, login. Каталог должен содержать следующие файлы: 
+
+`login.component.ts` - основной класс компонента
+
+`login.component.html` - шаблон компонента
+
+`login.module.ts` - класс модуля
+
+`index.ts` - файл, который экспортирует необходимые файлы
+
+`package.json` - информация о компоненте и его зависимостях
+
+`README.md` - документация
+
+## Публикация пакета
+
+Делаем коммит внесенных изменений
+
+`git add .`
+
+`git commit -m 'create login component'`
+
+`lerna publish` - после ввода данной команды будет выведена информация о версии компонента, чтобы опубликовать изменения нужно подтвердить операцию `y`. После подтверждения изменения попадут в git репозиторий и опубликуется пакет приватном npm рпепозитории.
