@@ -1,1 +1,1 @@
-# Tradedealer Shared
+# Shared module

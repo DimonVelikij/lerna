@@ -1,1 +1,1 @@
-# Tradedealer Accordion
+# Accordion module
