@@ -9,6 +9,8 @@ services:
 
   lerna:
     build: .
+    ports:
+      - '3000:3000'
     links:
       - verdaccio
     volumes:
