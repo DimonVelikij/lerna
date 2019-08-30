@@ -1,0 +1,44 @@
+{
+  "_from": "@tr/shared",
+  "_id": "@tr/shared@0.0.7",
+  "_inBundle": false,
+  "_integrity": "sha512-3/9T8610CXumHdutmpX5UpwGymVU10Z3t2NZJBFt5C7qnHH0VUSQGz+lgPTh1PYRWKlBf/UOgdpseIOth+1Rdw==",
+  "_location": "/@tr/shared",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@tr/shared",
+    "name": "@tr/shared",
+    "escapedName": "@tr%2fshared",
+    "scope": "@tr",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://verdaccio:4873/@tr%2fshared/-/shared-0.0.7.tgz",
+  "_shasum": "eafa48fd62a1f75a018d965c2dfed6ece6039fbc",
+  "_spec": "@tr/shared",
+  "_where": "/var/www/lerna",
+  "author": {
+    "name": "dborodin"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@tr/shared-accordion": "^0.0.5",
+    "@tr/shared-alert": "^0.0.5"
+  },
+  "deprecated": false,
+  "description": "Shared",
+  "gitHead": "5e95b65ae679750097df60b0e164c7f5d04a83b9",
+  "name": "@tr/shared",
+  "peerDependencies": {
+    "@angular/common": "^8.2.3",
+    "@angular/core": "^8.2.3"
+  },
+  "version": "0.0.7"
+}

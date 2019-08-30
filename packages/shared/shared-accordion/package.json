@@ -1,0 +1,39 @@
+{
+  "_from": "@tr/shared-accordion@^0.0.5",
+  "_id": "@tr/shared-accordion@0.0.5",
+  "_inBundle": false,
+  "_integrity": "sha512-tzn8Co2nM4QzcHX13rTWoRL1CuAg29B+QCUF57IACZxrUHMhu/MagovDxuXoMV+NuZcV/wk3HT/kTJc1RyQm6Q==",
+  "_location": "/@tr/shared-accordion",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@tr/shared-accordion@^0.0.5",
+    "name": "@tr/shared-accordion",
+    "escapedName": "@tr%2fshared-accordion",
+    "scope": "@tr",
+    "rawSpec": "^0.0.5",
+    "saveSpec": null,
+    "fetchSpec": "^0.0.5"
+  },
+  "_requiredBy": [
+    "/@tr/shared"
+  ],
+  "_resolved": "http://verdaccio:4873/@tr%2fshared-accordion/-/shared-accordion-0.0.5.tgz",
+  "_shasum": "e069350d3278a93f4cfa70566d24075255419178",
+  "_spec": "@tr/shared-accordion@^0.0.5",
+  "_where": "/var/www/lerna/node_modules/@tr/shared",
+  "author": {
+    "name": "dborodin"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Accordion",
+  "gitHead": "c23c1d699760d958dbb7a6e7f4e7d40892750a36",
+  "name": "@tr/shared-accordion",
+  "peerDependencies": {
+    "@angular/common": "^8.2.3",
+    "@angular/core": "^8.2.3"
+  },
+  "version": "0.0.5"
+}

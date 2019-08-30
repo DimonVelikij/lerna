@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AlertBaseComponent } from './accordion.base.component';
+import { AlertBaseComponent } from './alert.base.component';
 
 @Component({
     selector: 'td-alert',
