@@ -6,8 +6,8 @@
     "name": "dborodin"
   },
   "dependencies": {
-    "@tr/shared-accordion": "^0.0.5",
-    "@tr/shared-alert": "^0.0.5"
+    "@tr/shared-accordion": "^0.0.8",
+    "@tr/shared-alert": "^0.0.8"
   },
   "peerDependencies": {
     "@angular/common": "^8.2.3",
