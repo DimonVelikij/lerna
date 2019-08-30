@@ -18,20 +18,7 @@
       "es2018",
       "dom"
     ],
-    "paths": {
-      "@td/card": [
-        "dist/td/card"
-      ],
-      "@td/card/*": [
-        "dist/td/card/*"
-      ],
-      "test": [
-        "dist/test"
-      ],
-      "test/*": [
-        "dist/test/*"
-      ]
-    }
+    "paths": {}
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
