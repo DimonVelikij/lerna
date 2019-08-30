@@ -3,6 +3,10 @@
   "version": "0.0.6",
   "description": "Shared",
   "author": "dborodin",
+  "dependencies": {
+    "@tr/shared-accordion": "^0.0.5",
+    "@tr/shared-alert": "^0.0.5"
+  },
   "peerDependencies": {
     "@angular/common": "^8.2.3",
     "@angular/core": "^8.2.3"
