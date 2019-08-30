@@ -1,21 +1,25 @@
 import { NgModule } from '@angular/core';
 
-import { AccordionDesktopModule } from "./accordion/accordion.desktop.module";
-import { AlertDesktopModule } from "./alert/alert.desktop.module";
+import { AccordionDesktopModule } from "../td-shared-accordion";
+import { AccordionMobileModule } from "../td-shared-accordion";
 
-import { AccordionDesktopComponent } from "./accordion/accordion.desktop.component";
-import { AlertDesktopComponent } from "./alert/alert.desktop.component";
+import { AlertDesktopModule } from "../td-shared-alert";
+import { AlertMobileModule } from "../td-shared-alert";
 
 @NgModule({
     declarations: [],
     imports: [
         AccordionDesktopModule,
-        AlertDesktopModule
+        AccordionMobileModule,
+        AlertDesktopModule,
+        AlertMobileModule
     ],
     providers: [],
     exports: [
-        AccordionDesktopComponent,
-        AlertDesktopComponent
+        AccordionDesktopModule,
+        AccordionMobileModule,
+        AlertDesktopModule,
+        AlertMobileModule
     ]
 })
 export class SharedDesktopModule { }
